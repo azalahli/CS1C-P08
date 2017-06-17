@@ -11,7 +11,12 @@ public class SimulateChunks {
             Scanner input = new Scanner(inputFile);
             elements = input.nextLine();
             String[] items = elements.split(",");
-            size = (items.length / MEM_SIZE) + 1;
+            if(items.length % MEM_SIZE == 0) {
+                size = (items.length / MEM_SIZE);
+            }
+            else {
+                size = (items.length / MEM_SIZE) + 1;
+            }
 
             for(int i = 0; i < size - 1; i++){
                 Integer[] chunk =  new Integer[MEM_SIZE];
