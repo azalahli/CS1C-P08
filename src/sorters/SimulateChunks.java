@@ -13,13 +13,19 @@ public class SimulateChunks {
             String[] items = elements.split(",");
             size = (items.length / MEM_SIZE) + 1;
 
-            for(int i = 0; i < size; i++){
+            for(int i = 0; i < size - 1; i++){
                 Integer[] chunk =  new Integer[MEM_SIZE];
                 for(int j = 0; j < MEM_SIZE; j++){
                     chunk[j] = Integer.parseInt(items[(i * MEM_SIZE) + j]);
                 }
                 chunkArray.add(chunk);
             }
+            int lastChunk = items.length % MEM_SIZE;
+            Integer[] chunk = new Integer[lastChunk];
+            for(int i = 0; i < lastChunk; i++){
+                chunk[i] = Integer.parseInt(items[i]);
+            }
+            chunkArray.add(chunk);
             input.close();
         }
         catch (FileNotFoundException e){
