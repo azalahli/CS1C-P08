@@ -2,7 +2,18 @@ package sorters;
 import java.io.*;
 import java.util.*;
 
+/**
+ * Splits a file into simulated chunks, by means of dividing elements into arrays
+ * @author Myron Pow, 6/18/2017
+ * */
+
 public class SimulateChunks {
+    /**
+     * Parses a file into simulated chunks
+     * @param MEM_SIZE size of our simulated memory block/array
+     * @param fileName name of the file
+     * @param chunkArray pass by ref of the array of the simulated chunks
+     */
     public static void splitFileIntoArrayChunks(final int MEM_SIZE, String fileName, ArrayList<Integer[]> chunkArray){
         File inputFile = new File(fileName);
         int size;

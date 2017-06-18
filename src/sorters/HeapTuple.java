@@ -26,7 +26,7 @@ public class HeapTuple implements Comparable<HeapTuple>
 	/**
 	 * Constructs a tuple to stores the value and the 
 	 * array number it belongs to.
-	 * @param data          the number
+	 * @param number          the number
 	 * @param arrayIndex    the index of the array
 	 * @param indexInArray  the index of the data
 	 */

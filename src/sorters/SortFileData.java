@@ -83,7 +83,7 @@ public class SortFileData
 	 * For debugging and displaying results.
 	 * Outputs the array of Integer objects.
 	 * @param array    a subset of the data sorted 
-	 * @param index    the position of the data with respect to original
+	 * @param index1    the position of the data with respect to original
 	 */
 	public static void displaySortedChunks(
 			Integer [] array, int index1)	
