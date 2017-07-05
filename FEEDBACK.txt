@@ -1,0 +1,36 @@
+FEEDBACK:
+
+-10% late submission
+
+
+SUGGESTION: To strengthen your understanding of how to use and implement a min heap, 
+	try coming back to this project and completing the second half.
+
+
+-2 For Phase 1, use a sorting algorithm based on MEM_SIZE
+   as required by project description.
+       "The sorting algorithm should depend on the number of elements." 
+   For example, in class SortFileData how did you justify whether quickSort() is the most 
+   efficient algorithm for a small data set such as an array of 20 numbers?
+  
+
+
+-4 Missing implementation of getHeapsUsed() as required by test file.
+   Implementation returns a null list which results in my not being 
+   able to accurately give you credit for what you did implement.
+   
+
+-3 Invalid result for class heapArrayMerger results in duplicates 
+   and missing sequences. 
+	See sample output 1 below.
+	Why does your first and last sequence have so many duplicates?
+	
+	   
+other comments:
+For future, remove large blocks of uncommented code before your last submission.
+ 
+-Bita.
+
+
+sample output 1:
+[MISSING SEQUENCE]10,22,22,41,41,46,48,76,89,89,99,102,111,111,112,114,114,125,130,130,...1979,1983,1983,1985,1985,[MISSING SEQUENCE]
